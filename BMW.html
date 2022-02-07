@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .rwdsec1 {
+            display: none;
+
+        }
+
+        .rwdul2 {
+            display: none;
+        }
+
+        button:focus,
+        button:active:focus,
+        button.active:focus,
+        button.focus,
+        button:active.focus,
+        button.active.focus {
+            outline: none;
+        }
+
+
+        /*pch */
+        .pch {
+            position: absolute;
+            z-index: 999;
+            display: flex;
+            justify-content: space-around;
+            width: 70%;
+            /* max-width: 1216px; */
+            align-items: center;
+            border-bottom: 1px solid #bbb;
+            padding-bottom: 15px;
+            left: 180px;
+            padding-top: 10px;
+
+
+        }
+
+        .pch .pchl button {
+            background: none;
+            border: none;
+            margin-right: 20px;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .pchr {
+            display: flex;
+            align-items: center;
+        }
+
+        .pchr i {
+            color: #fff;
+        }
+
+        .pchr .pcpeople,
+        .pchr .pcplace {
+            margin-left: 30px;
+        }
+
+        .pchr .pclogo {
+            margin-left: 30px;
+        }
+
+        .pchr .pclogo img {
+            width: 80%;
+        }
+
+
+        /* area */
+        .area2,
+        .area3,
+        .area4,
+        .area5 {
+            display: flex;
+            width: 70%;
+            justify-content: center;
+            margin: auto;
+            position: absolute;
+            z-index: 1000;
+            left: 200px;
+            top: -700px;
+
+
+        }
+
+        .area2 a,
+        .area3 a,
+        .area4 a,
+        .area5 a {
+            text-decoration-color: #1c69d4;
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .area2 .areal,
+        .area3 .areal,
+        .area4 .areal,
+        .area5 .areal {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 30px 70px 100px 60px;
+            width: 60%;
+
+
+        }
+
+        .area2 .arear,
+        .area3 .arear,
+        .area4 .arear,
+        .area5 .arear {
+            background-color: #f2f2f2;
+            padding: 30px 70px 100px 60px;
+        }
+
+        .area3 .areara,
+        .area4 .areara,
+        .area5 .areara {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .area2 .arear .areart,
+        .area3 .arear .areart,
+        .area4 .arear .areart,
+        .area5 .arear .areart {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .area2 .arear img,
+        .area3 .arear img,
+        .area4 .arear img,
+        .area5 .arear img {
+            width: 40%;
+        }
+
+        .area3 .arear button {
+            border: none;
+            background: none;
+            transform: translate(180px, -180px);
+        }
+
+        .area4 .arear button {
+            border: none;
+            background: none;
+            transform: translate(480px, -13 0px);
+        }
+
+        .area2 .arear button,
+        .area5 .arear button {
+            border: none;
+            background: none;
+            transform: translate(550px, -100px);
+
+        }
+
+        /* sec1 */
+        .sec1 {
+            position: relative;
+            padding: 0px 100px;
+        }
+
+        .sec1img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sec1img img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sec1tittle {
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+
+        .sec1tittle span {
+            color: #fff;
+            font-size: 3rem;
+            line-height: 4rem;
+            font-weight: 500;
+
+        }
+
+        .sec1tittle p {
+            color: #fff;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 300;
+        }
+
+        .sec1tittle .sec1btn {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sec1tittle .sec1btn a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #1c69d4;
+            border-color: 1px solid #0653b6;
+            width: fit-content;
+            font-weight: 600;
+            padding: 10px 90px;
+            margin-bottom: 30px;
+
+        }
+
+        .sec1card {
+            position: relative;
+            padding-left: 0;
+            margin-top: 5px;
+            padding-right: 3px;
+            flex: 0 0 50%;
+            max-width: 50%;
+
+        }
+
+        .sec1cardtittle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .sec1cardtittle .sec1clogo {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .sec1cardtittle .sec1clogo img {
+            width: 18%;
+            height: 100%;
+        }
+
+        .sec1cardtittle span,
+        .sec1c2 span {
+            color: #fff;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-weight: 300;
+            margin-left: 10px;
+        }
+
+        .sec1cardtittle .sec1carda,
+        .sec1card2a {
+            margin-top: 20px;
+        }
+
+        .sec1cardtittle .sec1carda a,
+        .sec1card2a a {
+            text-decoration: none;
+            color: #fff;
+            width: fit-content;
+            font-weight: 600;
+            padding: 10px 90px;
+            margin-bottom: 30px;
+            border: 2px solid #fff;
+
+        }
+
+        .sec1card2 {
+            padding-right: 0;
+            position: relative;
+            padding-left: 3px;
+            margin-top: 5px;
+            flex: 0 0 50%;
+            max-width: 50%;
+
+        }
+
+        .sec1card2tittle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .sec1img2,
+        .sec1img3 {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sec1img2 img,
+        .sec1img3 img {
+            width: 100%;
+
+        }
+
+        /* sec2 */
+        .section2 {
+            margin-top: 50px;
+        }
+
+        .section2 .s2artical {
+            display: block;
+            padding-left: 215px;
+            padding-right: 190px;
+        }
+
+        .section2 .ul1 ul,
+        .section2 .ul2 ul {
+            list-style: none;
+            display: flex;
+            transform: translateX(-40px);
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+
+        }
+
+        .section2 .ul1 ul li button,
+        .section2 .ul2 ul li button {
+            background: none;
+            border: none;
+            font-size: 1rem;
+            line-height: 1.25rem;
+            font-weight: 700;
+            color: #666;
+            margin-right: 15px;
+        }
+
+        .cars1,
+        .cars2,
+        .cars3,
+        .cars4,
+        .cars5,
+        .cars6,
+        .cars7,
+        .cars8,
+        .carsx,
+        .carsz {
+            display: flex;
+        }
+
+        .cars1 .carcard,
+        .cars2 .carcard,
+        .cars3 .carcard,
+        .cars4 .carcard,
+        .cars5 .carcard,
+        .cars6 .carcard,
+        .cars7 .carcard,
+        .cars8 .carcard,
+        .carsx .carcard,
+        .carsz .carcard {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+
+        .cars1 .carcard .cardimg img,
+        .cars2 .carcard .cardimg img,
+        .cars3 .carcard .cardimg img,
+        .cars4 .carcard .cardimg img,
+        .cars5 .carcard .cardimg img,
+        .cars6 .carcard .cardimg img,
+        .cars7 .carcard .cardimg img,
+        .cars8 .carcard .cardimg img,
+        .carsx .carcard .cardimg img,
+        .carsz .carcard .cardimg img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .cars1 .carcard .cardf span,
+        .cars2 .carcard .cardf span,
+        .cars3 .carcard .cardf span,
+        .cars4 .carcard .cardf span,
+        .cars5 .carcard .cardf span,
+        .cars6 .carcard .cardf span,
+        .cars7 .carcard .cardf span,
+        .cars8 .carcard .cardf span,
+        .carsx .carcard .cardf span,
+        .carsz .carcard .cardf span {
+            margin-bottom: 0.5rem;
+            color: #262626;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 300;
+
+        }
+
+        .cars1 .carcard .cardf .carda,
+        .cars2 .carcard .cardf .carda,
+        .cars3 .carcard .cardf .carda,
+        .cars4 .carcard .cardf .carda,
+        .cars5 .carcard .cardf .carda,
+        .cars6 .carcard .cardf .carda,
+        .cars7 .carcard .cardf .carda,
+        .cars8 .carcard .cardf .carda,
+        .carsx .carcard .cardf .carda,
+        .carsz .carcard .cardf .carda {
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+
+        .cars1 .carcard .cardf .carda a,
+        .cars2 .carcard .cardf .carda a,
+        .cars3 .carcard .cardf .carda a,
+        .cars4 .carcard .cardf .carda a,
+        .cars5 .carcard .cardf .carda a,
+        .cars6 .carcard .cardf .carda a,
+        .cars7 .carcard .cardf .carda a,
+        .cars8 .carcard .cardf .carda a,
+        .carsx .carcard .cardf .carda a,
+        .carsz .carcard .cardf .carda a {
+            line-height: 20px;
+            color: #262626;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+
+        }
+
+        /* sec3 */
+        .col-lg-6 {
+            max-width: 35%;
+        }
+
+        .s3cardst,
+        .s3cardsb {
+            justify-content: center;
+        }
+
+        .s3cardst {
+            margin-top: 100px;
+        }
+
+        .s3cardsb {
+            margin-top: 80px;
+            margin-bottom: 100px;
+        }
+
+        .section3 .s3cards .card {
+            margin-right: 15px;
+        }
+
+        .section3 .s3cards .card .card-header {
+            border-bottom: none;
+            background: none;
+            padding: 0;
+            padding-top: 15px;
+        }
+
+        .section3 .s3cards .card .card-header img {
+            width: 100%;
+        }
+
+        .section3 .s3cards .card .card-body h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            line-height: 2.5rem;
+            font-weight: 300;
+        }
+
+        .section3 .s3cards .card .card-body p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            font-weight: 300;
+        }
+
+        .section3 .s3cards .card .card-body a {
+            line-height: 20px;
+            color: #262626;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        /* sec4 */
+        .col-lg-3 {
+            max-width: 17%;
+        }
+
+        .section4 {
+            margin-bottom: 80px;
+        }
+
+        .s4cards {
+            justify-content: center;
+        }
+
+        .section4 .s4cards .card {
+            padding-top: 15px;
+            margin-right: 15px;
+        }
+
+        .section4 .s4cards .card h2 {
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            font-weight: 300;
+        }
+
+        .section4 .s4cards .card a {
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #262626;
+            line-height: 20px;
+        }
+
+        /* sec5 */
+        #s5 {
+            width: 100%;
+            background-color: #fff;
+        }
+
+        .section5 {
+            display: flex;
+            justify-content: center;
+            border-top: 2px solid #bbb;
+            padding-top: 10px;
+
+        }
+
+        .s54a {
+            display: flex;
+
+        }
+
+        .s54a i {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .s54a a {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .s54a a p {
+            font-size: .625px;
+            color: #666;
+            font-weight: 700;
+            line-height: .875rem;
+
+        }
+
+        #s5.fixed {
+            position: fixed;
+            bottom: 0;
+            z-index: 6020;
+        }
+
+        /* pcf */
+        .pcfoot {
+            display: flex;
+        }
+
+        footer {
+            background-color: #e6e6e6;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        .pcfooter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .pcfooter .pcfoot {
+            border-top: 1px solid #bbb;
+        }
+
+        .pcfoot p {
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            font-weight: 600;
+            color: gray;
+        }
+
+        .pcfoot li {
+            font-size: .875rem;
+            line-height: 1.25rem;
+            font-weight: 700;
+            color: #666;
+        }
+
+        /* rwdh */
+        .rwdh {
+            display: none;
+        }
+
+        /* rwdf */
+        .rwdfoot {
+            display: none;
+        }
+
+
+        @media (max-width:375px) {
+            .pch {
+                display: none;
+            }
+
+            .area2,
+            .area3,
+            .area4,
+            .area5 {
+                display: none;
+            }
+
+            /* rwdh */
+            .rwdh {
+                position: absolute;
+                z-index: 999;
+                top: 15px;
+                display: flex;
+                align-items: center;
+            }
+
+            .rwdh .rwdl {
+                display: flex;
+                margin-left: 20px;
+            }
+
+            .rwdh .rwdl .rwdlist {
+                margin-right: 30px;
+
+            }
+
+            .rwdh .rwdl .rwdlist a i,
+            .rwdh .rwdl .rwdpeople a i {
+                color: white;
+            }
+
+            .rwdlogo img {
+                width: 12%;
+                margin-left: 230px;
+
+            }
+
+            .rwdsec1 .rwdsec1img img {
+                width: 100%;
+                height: 100%;
+            }
+
+            /* sec1 */
+            .sec1 {
+                display: none;
+            }
+
+            .rwdsec1 {
+                display: block;
+                position: relative;
+            }
+
+            .rwdsec1 .sec1tittle {
+                bottom: 0;
+                left: 30px;
+
+            }
+
+            .rwdsec1 .sec1card {
+                flex: 0 0 100%;
+                margin: 20px 0;
+            }
+
+            .sec1img2 img {
+                width: 100%;
+            }
+
+            .sec2card,
+            .sec1card {
+                padding: 0;
+            }
+
+            /* sec2 */
+            .section2 {
+                margin: 0;
+            }
+
+            .section2 .s2artical .ul2 {
+                display: none;
+            }
+
+            .rwdul2 {
+                display: block;
+                border-bottom: 1px solid #ccc;
+                padding-bottom: 20px;
+                padding-left: 15px;
+            }
+
+            .rwdul2 .dropdown-toggle {
+                background-color: white;
+                border: none;
+                font-weight: 600;
+                color: #666;
+
+
+            }
+
+            .section2 .ul1 ul,
+            .section2 .ul2 ul {
+                transform: translateX();
+            }
+
+            .section2 .ul1 {
+                margin-top: 40px;
+                margin-left: 15px;
+            }
+
+            .section2 .ul2 .li1 {
+                white-space: nowrap;
+            }
+
+            .section2 .cars1 {
+                margin: 0;
+            }
+
+            .section2 .cars1 .carcard {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+
+            .section2 .s2artical {
+                padding: 0;
+            }
+
+            /* sec3 */
+            .col-lg-6 {
+                max-width: 100%;
+            }
+
+            .section3 .s3cards,
+            .section4 .s4cards {
+                padding: 0 35px;
+            }
+
+            .section3 .s3cards .s3cardsb {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .section3 .s3cards .card,
+            .section4 .s4cards .card {
+                margin-right: 0;
+                margin-bottom: 80px;
+            }
+
+            /* sec4 */
+            .col-lg-3 {
+                max-width: 100%;
+            }
+
+            /* sec5 */
+            .s54a {
+                margin-left: 30px;
+            }
+
+            .s54a a i {
+                margin-bottom: 3px;
+            }
+
+            .s54a a p {
+                text-align: center;
+            }
+
+            /* pcf */
+            .pcfooter {
+                display: none;
+            }
+
+            .rwdfoot {
+                display: block;
+                padding-top: 100px;
+
+
+            }
+
+            .rwdf1,
+            .rwdf2,
+            .rwdf3,
+            .rwdf4 {
+                border-top: 1px solid #bbb;
+                width: 95%;
+                margin-bottom: 40px;
+                padding-top: 30px;
+            }
+
+            .rwdf4 {
+                padding-bottom: 50px;
+            }
+
+            .rwdfoot p {
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                font-weight: 600;
+                color: gray;
+            }
+
+            .rwdfoot li {
+                font-size: .875rem;
+                line-height: 1.25rem;
+                font-weight: 700;
+                color: #666;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- pcheader -->
+    <header>
+        <div class="pch">
+            <div class="pchl">
+                <button>所有車型</button>
+                <button class="pchbtn2">購車及優惠</button>
+                <button class="pchbtn3">BMW電動未來</button>
+                <button class="pchbtn4">車主服務</button>
+                <button class="pchbtn5">探索BMW</button>
+            </div>
+            <div class="pchr">
+                <div class="pcsearch">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+                <div class="pcplace">
+                    <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                </div>
+                <div class="pcpeople">
+                    <a href=""><i class="fas fa-user-alt"></i></a>
+                </div>
+                <div class="pclogo">
+                    <img src="https://www.bmw.com.tw/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/resources/img/BMW_Grey_Logo.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- nav area -->
+    <div class="row">
+        <div class="area2">
+            <div class="areal">
+                <a href="">訂製您的BMW</a>
+                <a href="">購車禮遇</a>
+                <a href="">BMW原廠認證中古車</a>
+                <a href="">企業客戶禮遇專案</a>
+                <a href="">BMW線上商店</a>
+            </div>
+            <div class="arear">
+                <div class="areart">
+                    <a href="#">選擇車款</a>
+                    <img src="img/areaimg/bmw_configurator.jpg" alt="">
+                </div>
+                <button class="areabtn"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="area3">
+            <div class="areal">
+                <a href="">BMW電動未來</a>
+            </div>
+            <div class="arear">
+                <div class="areart">
+                    <div class="areara">
+                        <a href="">概覽</a>
+                        <a href="">電動車</a>
+                        <a href="">續航里程</a>
+                        <a href="">永續發展</a>
+                        <a href="">BMW家用充電座預約</a>
+                    </div>
+
+                </div>
+                <button class="areabtn"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="area4">
+            <div class="areal">
+                <a href="">BMW Care客戶服務</a>
+                <a href="">BMW保養維修線上預約</a>
+                <a href="">My BMW App</a>
+                <a href="">BMW</a>
+            </div>
+            <div class="arear">
+                <div class="areart">
+                    <div class="areara">
+                        <a href="#">BMW售後服務概覽</a>
+                        <a href="#">BMW檢查與保養</a>
+                        <a href="#">BMW遠距售後服務</a>
+                    </div>
+                    <img src="img/areaimg/2019_offers_BMW-Care.png" alt="">
+                </div>
+                <button class="areabtn"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="area5">
+            <div class="areal">
+                <a href="">最新消息</a>
+                <a href="">BMW創新科技</a>
+                <a href="">BMW概念車</a>
+            </div>
+            <div class="arear">
+                <div class="areart">
+                    <div class="areara">
+                        <a href="#">最新資訊</a>
+                        <a href="#">售後服務/生活精品</a>
+                    </div>
+                    <img src="img/areaimg/news_info.jpg" alt="">
+                </div>
+                <button class="areabtn"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+    </div>
+    <!-- rwdheader -->
+    <header>
+        <div class="rwdh">
+            <div class="rwdl">
+                <div class="rwdlist">
+                    <a href=""><i class="fas fa-bars"></i></a>
+                </div>
+                <div class="rwdpeople">
+                    <a href=""><i class="fas fa-user-alt"></i></a>
+                </div>
+            </div>
+            <div class="rwdhr">
+                <div class="rwdlogo">
+                    <img src="https://www.bmw.com.tw/etc.clientlibs/ds2-webcomponents/clientlibs/clientlib/resources/img/BMW_Grey_Logo.svg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- pcsection1 -->
+    <section>
+        <div class="sec1">
+
+            <div class="row">
+                <div class="sec1img">
+                    <img src="img/banner/cq5dam.resized.img.1680.large.time1628484037172.jpg" alt="">
+                </div>
+                <div class="sec1tittle">
+                    <span>鋒格自成</span>
+                    <p> 全新世代BMW 4系列GRAN COUPÉ </p>
+                    <div class="sec1btn">
+                        <!-- <a href="#">
+                            訂製您的BMW
+                        </a> -->
+                        <a href="#">
+                            瞭解更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="sec1card col-12">
+                    <div class="sec1img2">
+                        <img src="img/index-top-banner/cq5dam.resized.img.980.medium.time1623122875055.jpg" alt="">
+                    </div>
+                    <div class="sec1cardtittle">
+                        <div class="sec1clogo">
+                            <img src="img/logo/BMW_i_100px.png.asset.1583221945801.png" alt="">
+                            <span>THE iX</span>
+                        </div>
+                        <div class="sec1carda">
+                            <a href="#">
+                                瞭解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sec1card2 col-12">
+                    <div class="sec1img3">
+                        <img src="img/index-top-banner/cq5dam.resized.img.980.medium.time1636108982154.jpg" alt="">
+                    </div>
+                    <div class="sec1card2tittle">
+                        <div class="sec1c2">
+                            <span>全新BMW 3系列白金極智版</span>
+                        </div>
+                        <div class="sec1card2a">
+                            <a href="#">
+                                瞭解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rwdsection -->
+    <section>
+        <div class="rwdsec1">
+
+            <div class="row">
+                <div class="rwdsec1img">
+                    <img src="https://www.bmw.com.tw/content/dam/bmw/marketTW/bmw_com_tw/index-top-banner/211215_index-banner-x3-x4_520x520.jpg/jcr:content/renditions/cq5dam.resized.img.485.low.time1639540905482.jpg"
+                        alt="">
+                </div>
+                <div class="sec1tittle">
+                    <span>鋒格自成</span>
+                    <p> 全新世代BMW 4系列GRAN COUPÉ </p>
+                    <div class="sec1btn">
+                        <!-- <a href="#">
+                            訂製您的BMW
+                        </a> -->
+                        <a href="#">
+                            瞭解更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="sec1card col-lg-6 col-12">
+                    <div class="sec1img2">
+                        <img src="https://www.bmw.com.tw/content/dam/bmw/marketTW/bmw_com_tw/index-top-banner/iX_1040_0608v2.jpg/jcr:content/renditions/cq5dam.resized.img.485.low.time1623122875931.jpg"
+                            alt="">
+                    </div>
+                    <div class="sec1cardtittle">
+                        <div class="sec1clogo">
+                            <img src="img/logo/BMW_i_100px.png.asset.1583221945801.png" alt="">
+                            <span>THE iX</span>
+                        </div>
+                        <div class="sec1carda">
+                            <a href="#">
+                                瞭解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2card col-lg-6 col-12">
+                    <div class="sec1img3">
+                        <img src="https://www.bmw.com.tw/content/dam/bmw/marketTW/bmw_com_tw/index-top-banner/211215-G26-4GC-520x520.jpg/jcr:content/renditions/cq5dam.resized.img.485.low.time1639540510750.jpg"
+                            alt="">
+                    </div>
+                    <div class="sec1card2tittle">
+                        <div class="sec1c2">
+                            <span>全新BMW 3系列白金極智版</span>
+                        </div>
+                        <div class="sec1card2a">
+                            <a href="#">
+                                瞭解更多
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section2 -->
+    <section>
+        <div class="section2">
+            <div class="s2artical">
+                <div class="ul1">
+                    <ul>
+                        <li>
+                            <button>車型</button>
+                        </li>
+                        <li>
+                            <button>類別</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ul2">
+                    <ul>
+                        <li class="li1">
+                            <button>所有車型</button>
+                        </li>
+                        <li class="bt1">
+                            <button>1</button>
+                        </li>
+                        <li class="bt2">
+                            <button>2</button>
+                        </li>
+                        <li class="bt3">
+                            <button>3</button>
+                        </li>
+                        <li class="bt4">
+                            <button>4</button>
+                        </li>
+                        <li class="bt5">
+                            <button>5</button>
+                        </li>
+                        <li class="bt6">
+                            <button>6</button>
+                        </li>
+                        <li class="bt7">
+                            <button>7</button>
+                        </li>
+                        <li class="bt8">
+                            <button>8</button>
+                        </li>
+                        <li class="btx">
+                            <button>X</button>
+                        </li>
+                        <li class="btz">
+                            <button>Z</button>
+                        </li>
+                        <li>
+                            <button>M</button>
+                        </li>
+                        <li>
+                            <button>i</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- rwdul2 -->
+                <div class="rwdul2">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            所有車型
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item bt1" href="">1</a>
+                            <a class="dropdown-item bt2" href="">2</a>
+                            <a class="dropdown-item" href="">3</a>
+                            <a class="dropdown-item" href="">4</a>
+                            <a class="dropdown-item" href="">5</a>
+                            <a class="dropdown-item" href="">6</a>
+                            <a class="dropdown-item" href="">7</a>
+                            <a class="dropdown-item" href="">8</a>
+                            <a class="dropdown-item" href="">X</a>
+                            <a class="dropdown-item" href="">Z</a>
+                            <a class="dropdown-item" href="">M</a>
+                            <a class="dropdown-item" href="">i</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- car1 -->
+                <div class="row cars1">
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/marketTW/bmw_com_tw/all-models/1series/bmw-1-series-modelfinder_890x500.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 1系列豪華掀背房車</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car2 -->
+                <div class="row cars2" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/2-series/coupe/2021/navigation/bmw-2-series-coupe-ag-modelfinder-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 2系列Coupé</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/2-series/gran-coupe/2019/navigation/BMW-2-Series-gran-coupe_ModelCard.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 2系列Gran Coupé</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/2-series/active-tourer/2021/navigation/bmw_u06_modelfinder_20_50_270_grad_01.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 2系列Active Tourer</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/2-series/gran-tourer/2017/model-card/BMW-2-Series-Gran-Tourer_ModelCard.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 2系列Gran Tourer</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car3 -->
+                <div class="row cars3" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/3-series/sedan/2021/navigation/bmw-3-series-modellfinder.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 3系列豪華房車</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/3-series/touring/2021/navigation/bmw-modelfinder-stage2-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 3系列Touring</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car4 -->
+                <div class="row cars4" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/3-series/touring/2021/navigation/bmw-modelfinder-stage2-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 4系列Gran Coupé</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/4-series/convertible/2020/navigation/bmw-4-series-convertible-ag-modelfinder-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 4系列敞篷跑車</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car5 -->
+                <div class="row cars5" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/5-series/touring/2021/navigation/bmw-5-series-touring-posi-modelfinder.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 5系列Touring</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car6 -->
+                <div class="row cars6" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/8-series/coupe/2018/navigation/bmw-8series-coupe-modellfinder.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 8系列Coupé</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car7 -->
+                <div class="row cars7" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/7-series/sedan/2021/navigation/bmw-7-series-sedan-modelfinder-stage2-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>旗艦房車BMW 7系列</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- car8 -->
+                <div class="row cars8" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/m-series/m850i-gran-coupe/2019/navigation/bmw-8series-gran-coupe-m850i-modelfinder-stage2-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW 8系列Gran Coupé</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carx -->
+                <div class="row carsx" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/marketTW/bmw_com_tw/all-models/xseries/x2/2020/Navigation/200908_X2_navigation_890x500.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW X2</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/x-series/x3/2021/navigation/bmw-x3-modelfinder-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW X3</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/x-series/x4/2021/navigation/bmw-x4-modelfinder-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW X4</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/x-series/x5/2021/navigation/bmw-g05-x5-2019-modellfinder.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW X5</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/m-series/m50i-x6/2019/navigation/BMW-X6-m50i_ModelCard.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW X6</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/x-series/x7/2018/Navigation/bmw-x7-modelfinder-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW X7</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- carz -->
+                <div class="row carsz" hidden>
+                    <div class="carcard col-12">
+                        <div class="cardimg">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/common/all-models/z-series/roadster/2018/navigation/bmw-zseries-z4-overview-stage2-890x501.png"
+                                alt="">
+                        </div>
+                        <div class="cardf">
+                            <span>BMW Z4敞篷跑車</span>
+                            <div class="carda">
+                                <a href="#">訂製您的BMW</a>
+                                <a href="#">瞭解更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section3 -->
+    <section>
+        <div class="section3">
+            <div class="s3cards">
+                <div class="row s3cardst">
+                    <div class="card col-lg-6 col-12">
+                        <div class="card-header">
+                            <img src="https://www.bmw.com.tw/content/dam/bmw/marketTW/bmw_com_tw/index-teaser/U06-2-series-active-tourer-890x500.jpg/jcr:content/renditions/cq5dam.resized.img.585.low.time1639393239974.jpg"
+                                alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2> 全新世代BMW 2系列Active Tourer </h2>
+                            <p>全新世代BMW 2系列Active
+                                Tourer提供高品質的標配套件，搭載擁有156匹最大輸出馬力的引擎及48V的高效複合動力系統的動態駕馭性能，完美展現出經典BMW的純粹駕乘樂趣。
+                            </p>
+                            <a href="#">瞭解更多</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-6 col-12">
+                        <div class="card-header">
+                            <img src="img/index-4/cq5dam.resized.img.890.medium.time1636550471103.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2> BMW 128ti </h2>
+                            <p>全新運動化性能掀背，全新BMW 128ti重新演繹代表ti的熱血跑魂，激發內心深處的駕馭躍動！
+                            </p>
+                            <a href="#">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row s3cardsb">
+                    <div class="card col-lg-6 col-12">
+                        <div class="card-header">
+                            <img src="img/index-4/cq5dam.resized.img.890.medium.time1623751005058.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2> THE i4 </h2>
+                            <p>全新BMW THE i4 純電四門跑車，源自 Gran Coupe 家族設計基因。零排放的馭電新型態，徹底滿足駕馭狂的極度激情，全面衝擊你對性能跑車的定義!
+                            </p>
+                            <a href="#">瞭解更多</a>
+                        </div>
+                    </div>
+                    <div class="card col-lg-6 col-12">
+                        <div class="card-header">
+                            <img src="img/index-4/cq5dam.resized.img.890.medium.time1622536244169.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h2> BMW YOURS 多元智選 </h2>
+                            <p>BMW Yours多元智選，全方位購車選項、自由挑選搭配，以量身打造的方案拉近你與夢想的距離。圓夢更快一步，與BMW一起馳騁理想生活，駕馭未來無限樂趣！
+                            </p>
+                            <a href="#">瞭解更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section4 -->
+    <section>
+        <div class="section4">
+            <div class="row s4cards">
+                <div class="card col-lg-3 col-12" style="width: 16rem;">
+                    <img src="img/index4-2/cq5dam.resized.img.485.low.time1566528296863.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h2> 訂製您的BMW </h2>
+                        <a href="#">瞭解更多</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-12" style="width: 16rem;">
+                    <img src="img/index4-2/cq5dam.resized.img.485.low.time1564543537106.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h2> 預約賞車 </h2>
+                        <a href="#">瞭解更多</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-12" style="width: 16rem;">
+                    <img src="img/index4-2/cq5dam.resized.img.485.low.time1482833965625.png" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h2> 生活精品 </h2>
+                        <a href="#">瞭解更多</a>
+                    </div>
+                </div>
+                <div class="card col-lg-3 col-12" style="width: 16rem;">
+                    <img src="img/index4-2/cq5dam.resized.img.485.low.time1620619705325.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h2> BMW最新消息 </h2>
+                        <a href="#">瞭解更多</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- sec5 -->
+    <section id="s5">
+        <div class="section5">
+            <div class="s54a">
+                <a href="#">
+                    <i class="fab fa-medium-m"></i>
+                    <p>預約賞車</p>
+                </a>
+                <a href="#">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>尋找BMW展示中心與服務中心</p>
+                </a>
+                <a href="#">
+                    <i class="fas fa-car"></i>
+                    <p>訂製您的BMW</p>
+                </a>
+                <a href="#">
+                    <i class="fas fa-tv"></i>
+                    <p>獲得BMW最新消息</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- pcfooter -->
+    <footer class="pcfooter">
+        <div class="pcfoot">
+            <div class="pcf1">
+                <ul>
+                    <p>了解更多BMW</p>
+                    <li>企業理念</li>
+                    <li>企業客戶專案</li>
+                    <li>Diplomatic Sales</li>
+                    <li>Motorrad 摩托車</li>
+                    <li>財盟租資服務</li>
+                </ul>
+            </div>
+            <div class="pcf2">
+                <ul>
+                    <p>下載專區</p>
+                    <li>型錄與規格配備下載</li>
+                    <li>月曆下載</li>
+                </ul>
+            </div>
+            <div class="pcf3">
+                <ul>
+                    <p>快速連結</p>
+                    <li>BMW Taiwan Facebook</li>
+                    <li>BMW Taiwan Youtube</li>
+                    <li>BMW Taiwan Instagram</li>
+                    <li>BMW Taiwan Line</li>
+                    <li>BMW.com</li>
+                </ul>
+            </div>
+            <div class="pcf4">
+                <ul>
+                    <p>其他</p>
+                    <li>聯絡我們</li>
+                    <li>網站地圖</li>
+                    <li>法律聲明與Cookie政策</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- rwdfooter -->
+    <footer>
+        <div class="rwdfoot">
+            <div class="rwdf1">
+                <ul>
+                    <p>了解更多BMW</p>
+                    <li>企業理念</li>
+                    <li>企業客戶專案</li>
+                    <li>Diplomatic Sales</li>
+                    <li>Motorrad 摩托車</li>
+                    <li>財盟租資服務</li>
+                </ul>
+            </div>
+            <div class="rwdf2">
+                <ul>
+                    <p>下載專區</p>
+                    <li>型錄與規格配備下載</li>
+                    <li>月曆下載</li>
+                </ul>
+            </div>
+            <div class="rwdf3">
+                <ul>
+                    <p>快速連結</p>
+                    <li>BMW Taiwan Facebook</li>
+                    <li>BMW Taiwan Youtube</li>
+                    <li>BMW Taiwan Instagram</li>
+                    <li>BMW Taiwan Line</li>
+                    <li>BMW.com</li>
+                </ul>
+            </div>
+            <div class="rwdf4">
+                <ul>
+                    <p>其他</p>
+                    <li>聯絡我們</li>
+                    <li>網站地圖</li>
+                    <li>法律聲明與Cookie政策</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        const navTop = $('#s5').offset().top;
+        $(window).scroll(function () {
+            if ($(window).scrollTop() + $(window).height() <= navTop) {
+                $('#s5').addClass('fixed');
+            }
+            else {
+                $('#s5').removeClass('fixed');
+            }
+        });
+
+        $('.bt1').click(function () {
+            $('.cars1').removeAttr('hidden');
+            $('.cars2').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.bt2').click(function () {
+            $('.cars2').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.bt3').click(function () {
+            $('.cars3').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.bt4').click(function () {
+            $('.cars4').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.bt5').click(function () {
+            $('.cars5').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.bt6').click(function () {
+            $('.cars6').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.bt7').click(function () {
+            $('.cars7').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.bt8').click(function () {
+            $('.cars8').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.btx').click(function () {
+            $('.carsx').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+            $('.carsz').attr("hidden", true);
+
+        });
+        $('.btz').click(function () {
+            $('.carsz').removeAttr('hidden');
+            $('.cars1').attr("hidden", true);
+            $('.cars2').attr("hidden", true);
+            $('.cars4').attr("hidden", true);
+            $('.cars5').attr("hidden", true);
+            $('.cars6').attr("hidden", true);
+            $('.cars7').attr("hidden", true);
+            $('.cars8').attr("hidden", true);
+            $('.carsx').attr("hidden", true);
+            $('.cars3').attr("hidden", true);
+
+        });
+        $('.pchbtn2').click(function () {
+            // $('.area2').css('transform', 'translateY(350px)');
+            $('.area2').animate({ top: "68px" }, '1000');
+            $('.area3').animate({ top: "-700px" }, '1000');
+            $('.area4').animate({ top: "-700px" }, '1000');
+            $('.area5').animate({ top: "-700px" }, '1000');
+            $('.pch').css('background', '#fff');
+            $('.pch').css('width', '100%');
+            $('.pch').css('position', 'absolute');
+            $('.pch').css('left', '0px');
+            $('button').css('color', '#000');
+            $('i').css('color', '#000');
+
+        });
+        $('.pchbtn3').click(function () {
+            // $('.area2').css('transform', 'translateY(350px)');
+            $('.area3').animate({ top: "68px" }, '1000');
+            $('.area2').animate({ top: "-700px" }, '1000');
+            $('.area4').animate({ top: "-700px" }, '1000');
+            $('.area5').animate({ top: "-700px" }, '1000');
+            $('.pch').css('background', '#fff');
+            $('.pch').css('width', '100%');
+            $('.pch').css('position', 'absolute');
+            $('.pch').css('left', '0px');
+            $('button').css('color', '#000');
+            $('i').css('color', '#000');
+
+        });
+        $('.pchbtn4').click(function () {
+            // $('.area2').css('transform', 'translateY(350px)');
+            $('.area4').animate({ top: "68px" }, '1000');
+            $('.area3').animate({ top: "-700px" }, '1000');
+            $('.area2').animate({ top: "-700px" }, '1000');
+            $('.area5').animate({ top: "-700px" }, '1000');
+            $('.pch').css('background', '#fff');
+            $('.pch').css('width', '100%');
+            $('.pch').css('position', 'absolute');
+            $('.pch').css('left', '0px');
+            $('button').css('color', '#000');
+            $('i').css('color', '#000');
+
+        });
+        $('.pchbtn5').click(function () {
+            // $('.area2').css('transform', 'translateY(350px)');
+            $('.area5').animate({ top: "68px" }, '1000');
+            $('.area3').animate({ top: "-700px" }, '1000');
+            $('.area4').animate({ top: "-700px" }, '1000');
+            $('.area2').animate({ top: "-700px" }, '1000');
+            $('.pch').css('background', '#fff');
+            $('.pch').css('width', '100%');
+            $('.pch').css('position', 'absolute');
+            $('.pch').css('left', '0px');
+            $('button').css('color', '#000');
+            $('i').css('color', '#000');
+
+        });
+
+
+        $('.areabtn').click(function () {
+            // $('.area2').css('transform', 'translateY(-350px)');
+            $('.area2').animate({ top: "-700px" }, '1000');
+            $('.area3').animate({ top: "-700px" }, '1000');
+            $('.area4').animate({ top: "-700px" }, '1000');
+            $('.area5').animate({ top: "-700px" }, '1000');
+            $('.pch').css('background', 'none');
+            $('.pch').css('width', '70%');
+            $('.pch').css('position', 'absolute');
+            $('.pch').css('left', '250px');
+            $('button').css('color', '#fff');
+            $('i').css('color', '#fff');
+        });
+
+        $('.pchbtn2').on('click', function (event) {
+            event.stopPropagation();
+            $(this).siblings('.area2').toggle();
+
+            var area = $(this).siblings('.area2').toggle();
+            var flag = true;
+            $(document).bind('click', function (e) {
+                var target = $(e.target);
+                if (target.closest(area).length == 0 && flag == true) {
+                    $(area).hide();
+                    flag = false;
+                }
+            })
+        });
+
+
+
+
+
+        $('.pchbtn2').mouseenter(function () {
+            $(this).css('border-bottom', "3px solid #1c69d4");
+
+        });
+        $('.pchbtn3').mouseenter(function () {
+            $(this).css('border-bottom', "3px solid #1c69d4");
+
+        });
+        $('.pchbtn4').mouseenter(function () {
+            $(this).css('border-bottom', "3px solid #1c69d4");
+
+        });
+        $('.pchbtn5').mouseenter(function () {
+            $(this).css('border-bottom', "3px solid #1c69d4");
+
+        });
+        $('.pchbtn2').mouseleave(function () {
+            $(this).css('border-bottom', "none");
+
+        });
+        $('.pchbtn3').mouseleave(function () {
+            $(this).css('border-bottom', "none");
+
+        });
+        $('.pchbtn4').mouseleave(function () {
+            $(this).css('border-bottom', "none");
+
+        });
+        $('.pchbtn5').mouseleave(function () {
+            $(this).css('border-bottom', "none");
+
+        });
+
+    </script>
+</body>
+
+</html>
